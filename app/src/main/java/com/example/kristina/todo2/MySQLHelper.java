@@ -1,5 +1,6 @@
 package com.example.kristina.todo2;
 
+import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -19,12 +20,17 @@ public class MySQLHelper extends SQLiteOpenHelper {
             "create table " + TABLE_USER + "(" +
                     COLUMN_ID + " integer primary key autoincrement, " +
                     COLMN_NAME + " text not null, " +
-                    
+                    COLMN_PASSWORD + " text not null);";
+
+
+    public MySQLHelper(Context context) {
+        super(context, DB_NAME, null, DB_VERSION);
+    }
 
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-
+        db.execSQL(SQL_CREATE);
     }
 
     @Override
