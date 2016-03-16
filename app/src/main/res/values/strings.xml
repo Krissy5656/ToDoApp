@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ToDo-App</string>
+    <string name="Benutzername">Benutzername:</string>
+    <string name="Passwort">Passwort:</string>
+    <string name="Registrieren">Registrieren?</string>
+    <string name="LogIn">LogIn</string>
+    <string name="Registrieren1">Registrieren</string>
+    <string name="Abbrechen">Abbrechen</string>
+    <string name="Passwortw">PasswortWdh:</string>
+    <string name="title_activity_toolbar">ToolbarActivity</string>
+    <string name="toolbar_linksbuendig_title">Toolbar linksbuendig</string>
+    <string name="action_settings">Settings</string>
+</resources>
